@@ -1,0 +1,14 @@
+---
+resources:
+  - name: concourse-tutorial
+    type: git
+    source:
+      uri: https://github.com/alysanne/concourse-tutorial
+      branch: develop
+
+jobs:
+  - name: hello-concourse
+    plan:
+      - get: concourse-tutorial
+      - task: say-hello-world
+        file: concourse-tutorial/my_pipeline/say-hello-world-task.yml
