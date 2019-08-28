@@ -1,0 +1,13 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: docker/whalesay
+
+inputs: 
+  - name: concourse-tutorial
+
+run:
+  path: concourse-tutorial/my_pipeline/say-hello.sh

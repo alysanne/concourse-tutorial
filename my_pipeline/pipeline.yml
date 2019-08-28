@@ -12,4 +12,6 @@ jobs:
       - get: concourse-tutorial
       - task: list-items
         file: concourse-tutorial/my_pipeline/list-items-task.yml
+      - task: say-hello
+        file: concourse-tutorial/my_pipeline/say-hello-task.yml
       
