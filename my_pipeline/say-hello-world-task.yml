@@ -6,6 +6,8 @@ image_resource:
   source:
     repository: busybox
 
+inputs: 
+  - name: concourse-tutorial
+
 run:
-  path: ls
-  args: [-R]
+  path: concourse-tutorial/my_pipeline/say-hello-world.sh
