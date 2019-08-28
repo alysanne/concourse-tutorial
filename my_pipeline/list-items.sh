@@ -1,3 +1,4 @@
 #!/bin/sh
 
-ls -R
+cd concourse-tutorial/my_pipeline
+ls -l
