@@ -10,5 +10,6 @@ jobs:
   - name: hello-concourse
     plan:
       - get: concourse-tutorial
-      - task: say-hello-world
-        file: concourse-tutorial/my_pipeline/say-hello-world-task.yml
+      - task: list-items
+        file: concourse-tutorial/my_pipeline/list-items-task.yml
+      
